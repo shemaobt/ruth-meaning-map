@@ -1,0 +1,252 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Ruth Meaning Map Guide (Team Edition)</title>
+  <style>
+    :root {
+      --ink: #1f2937;
+      --muted: #4b5563;
+      --accent: #1f6feb;
+      --accent-2: #10b981;
+      --paper: #ffffff;
+      --panel: #f8fafc;
+      --border: #e5e7eb;
+      --highlight: #fff7ed;
+    }
+    body {
+      font-family: "Charter", "Georgia", serif;
+      color: var(--ink);
+      background: var(--paper);
+      margin: 0;
+      padding: 48px 64px;
+      line-height: 1.5;
+    }
+    h1, h2, h3 {
+      font-family: "Palatino Linotype", Palatino, serif;
+      margin: 0 0 12px 0;
+    }
+    h1 { font-size: 28px; }
+    h2 { font-size: 20px; margin-top: 28px; }
+    h3 { font-size: 16px; margin-top: 20px; }
+    p { margin: 8px 0 12px; }
+    .subtitle { color: var(--muted); margin-bottom: 18px; }
+    .banner {
+      background: linear-gradient(135deg, #e0f2fe, #ecfdf5);
+      border: 1px solid var(--border);
+      padding: 16px 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    .toc {
+      border: 1px solid var(--border);
+      background: var(--panel);
+      padding: 14px 18px;
+      border-radius: 10px;
+    }
+    .toc ul { margin: 6px 0 0; padding-left: 18px; }
+    .section {
+      border-left: 4px solid var(--accent);
+      padding-left: 14px;
+      margin-top: 24px;
+    }
+    .callout {
+      background: var(--highlight);
+      border: 1px solid #fed7aa;
+      padding: 12px 14px;
+      border-radius: 8px;
+      margin: 14px 0;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px 24px;
+    }
+    .card {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 12px 14px;
+      background: #ffffff;
+    }
+    .card h3 { margin-top: 0; }
+    ul { padding-left: 18px; margin: 6px 0 12px; }
+    li { margin: 4px 0; }
+    .tag {
+      display: inline-block;
+      background: #eef2ff;
+      color: #3730a3;
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-size: 12px;
+      margin-right: 6px;
+    }
+    .small { font-size: 12px; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <h1>Ruth Meaning Map Guide (Team Edition)</h1>
+  <div class="subtitle">Practice‑ready guide for clause‑level meaning maps using Tripod.</div>
+
+  <div class="banner">
+    <strong>Purpose:</strong> Help analysts map Ruth clause‑by‑clause in a consistent, cross‑linguistic way so the story can later be reconstructed orally in another language.
+  </div>
+
+  <div class="toc">
+    <strong>Contents</strong>
+    <ul>
+      <li>Why we are doing this</li>
+      <li>What a meaning map is</li>
+      <li>How it will be used</li>
+      <li>Tripod framework (Ruth‑specific)</li>
+      <li>Common value definitions (Ruth focus)</li>
+      <li>How to use the app (step‑by‑step)</li>
+      <li>Best practices</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>1) Why We Are Doing This</h2>
+    <p>We are building <strong>meaning maps</strong> of the book of Ruth so the story can later be <strong>reconstructed orally</strong> in a new language, not merely translated word‑for‑word. This requires capturing:</p>
+    <ul>
+      <li>What the Hebrew text explicitly encodes (syntax, discourse, semantics)</li>
+      <li>What is required for reconstruction (e.g., evidentiality, discourse function, participant tracking)</li>
+    </ul>
+    <div class="callout">The goal is not to guess hidden ideas, but to faithfully represent what is in the text in a structured, language‑independent way.</div>
+  </div>
+
+  <div class="section">
+    <h2>2) What a Meaning Map Is</h2>
+    <p>A <strong>meaning map</strong> is a structured representation of each clause that includes:</p>
+    <ul>
+      <li>Clause type (event vs non‑event)</li>
+      <li>Core event or state</li>
+      <li>Roles of participants (who does what to whom, where, when)</li>
+      <li>Discourse function (mainline, background, setting, etc.)</li>
+      <li>Pragmatic and rhetorical signals</li>
+      <li>Participant tracking across the story</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>3) How This Will Be Used Later</h2>
+    <p>After validation, the maps will feed a pipeline that reconstructs Ruth in a new language using clause‑level semantics, discourse structure, and participant tracking to produce a natural, oral‑form retelling.</p>
+  </div>
+
+  <div class="section">
+    <h2>4) Tripod Framework (Ruth‑Specific)</h2>
+    <p>Tripod defines the categories we record. Below are the Ruth‑relevant categories that appear in the app.</p>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Layer 3 — Clause Semantics</h3>
+        <p><span class="tag">Clause type</span> event, identification, classification, attribution, existential</p>
+        <p><span class="tag">Event category</span> STATE, MOTION, ACTION, TRANSFER, SPEECH, INTERNAL, PROCESS, RITUAL, META, SOCIAL</p>
+        <p><span class="tag">Semantic roles</span> initiator, affected, experiencer, recipient, beneficiary, source, goal, location, instrument, companion, manner, time, cause, purpose, result, theme, identity, separated_from</p>
+        <p><span class="tag">Non‑event roles</span> subject, predicate, domain, location</p>
+      </div>
+      <div class="card">
+        <h3>Layer 4 — Event Modifiers</h3>
+        <p><span class="tag">Reality</span> actual, potential, hypothetical, counterfactual, obligatory, desired, feared, commanded, permitted</p>
+        <p><span class="tag">Time frame</span> retrospective, immediate, prospective, gnomic</p>
+        <p><span class="tag">Aspect</span> completed, ongoing, habitual, inchoative, cessative</p>
+        <p><span class="tag">Polarity</span> positive, negative</p>
+        <p><span class="tag">Evidentiality</span> witnessed_visual, witnessed_sensory, reported, inferred, assumed, general_knowledge, divine_revelation, unspecified</p>
+      </div>
+      <div class="card">
+        <h3>Layer 5 — Discourse</h3>
+        <p><span class="tag">Function</span> Setting, Background, Mainline, Evaluation, Quote introduction, Peak</p>
+        <p><span class="tag">Relation</span> sequence, background, cause, purpose, result, contrast, condition, concession, additive, resumption, temporal, elaboration, explanation, comparison, content_specification</p>
+        <p><span class="tag">Info structure</span> topic_given, topic_new, topic_contrast, none</p>
+      </div>
+      <div class="card">
+        <h3>Layers 6–8 — Pragmatics / Inference / Rhetoric</h3>
+        <p>These are used only when relevant to the register (e.g., dialogue or poetic sections). The app hides most of these when a register filter is chosen.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>5) Common Value Definitions (Ruth‑Focused, Short)</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Clause type</h3>
+        <ul>
+          <li><strong>event</strong>: something happens or is done</li>
+          <li><strong>identification</strong>: X is Y (naming/identity)</li>
+          <li><strong>classification</strong>: X belongs to a category</li>
+          <li><strong>attribution</strong>: X has a quality</li>
+          <li><strong>existential</strong>: there is/there are</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Discourse function</h3>
+        <ul>
+          <li><strong>Mainline</strong>: backbone events</li>
+          <li><strong>Background</strong>: supporting info</li>
+          <li><strong>Setting</strong>: time/place setup</li>
+          <li><strong>Quote intro</strong>: introduces speech</li>
+          <li><strong>Evaluation</strong>: speaker/narrator evaluation</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Time frame</h3>
+        <ul>
+          <li><strong>retrospective</strong>: past‑viewed events</li>
+          <li><strong>immediate</strong>: “now” in narrative frame</li>
+          <li><strong>prospective</strong>: forward‑looking (commands, intentions)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Register (most common in Ruth)</h3>
+        <ul>
+          <li><strong>narrative</strong>: standard storytelling</li>
+          <li><strong>dialogue</strong>: direct speech</li>
+          <li><strong>poetic</strong>: stylized speech or blessing</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Semantic roles (common)</h3>
+        <ul>
+          <li><strong>initiator</strong>: performs the action</li>
+          <li><strong>affected</strong>: impacted by the action</li>
+          <li><strong>experiencer</strong>: perceives/thinks/feels</li>
+          <li><strong>recipient / beneficiary</strong>: receives or benefits</li>
+          <li><strong>location / time / manner</strong>: where, when, how</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Mention status</h3>
+        <ul>
+          <li><strong>new_mention</strong>: first appearance</li>
+          <li><strong>given</strong>: already introduced</li>
+          <li><strong>inferrable</strong>: can be inferred from context</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>6) How to Use the App (Step‑by‑Step)</h2>
+    <ol>
+      <li><strong>Find a clause</strong> using the search box (e.g., “1:3”).</li>
+      <li><strong>Select Register</strong> to hide irrelevant sections.</li>
+      <li><strong>Clause Semantics</strong>: confirm clause type, event category, event core, semantic roles.</li>
+      <li><strong>Event Modifiers</strong>: verify time frame and polarity; fill reality, aspect, evidentiality.</li>
+      <li><strong>Discourse</strong>: confirm discourse function; choose discourse relation.</li>
+      <li><strong>Mentions & Participants</strong>: link each mention to the right participant and mark status.</li>
+      <li><strong>Relations</strong>: confirm targets for any explicit relations.</li>
+    </ol>
+  </div>
+
+  <div class="section">
+    <h2>7) Best Practices</h2>
+    <ul>
+      <li>Accuracy over speed. Leave “needs input” if uncertain.</li>
+      <li>Use Register to reduce clutter.</li>
+      <li>Do not over‑use “background” for main events.</li>
+      <li>For repeated common‑noun participants, merge carefully.</li>
+    </ul>
+    <div class="small">This is a training phase, not final production.</div>
+  </div>
+</body>
+</html>

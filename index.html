@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Ruth Meaning Map — Practice Hub</title>
+  <style>
+    :root {
+      --ink: #1f2937;
+      --muted: #4b5563;
+      --accent: #1f6feb;
+      --accent-2: #10b981;
+      --paper: #ffffff;
+      --panel: #f8fafc;
+      --border: #e5e7eb;
+    }
+    body {
+      font-family: "Charter", "Georgia", serif;
+      color: var(--ink);
+      background: var(--paper);
+      margin: 0;
+      padding: 48px 64px;
+      line-height: 1.5;
+    }
+    h1, h2, h3 { font-family: "Palatino Linotype", Palatino, serif; }
+    h1 { margin: 0 0 10px; }
+    p { margin: 6px 0 14px; }
+    .banner {
+      background: linear-gradient(135deg, #e0f2fe, #ecfdf5);
+      border: 1px solid var(--border);
+      padding: 16px 20px;
+      border-radius: 10px;
+      margin-bottom: 22px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px 24px;
+    }
+    .card {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: #fff;
+      padding: 14px 16px;
+    }
+    .primary {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      padding: 10px 16px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .primary:hover { background: #1959c7; }
+    .secondary {
+      display: inline-block;
+      background: #eef2ff;
+      color: #3730a3;
+      padding: 6px 12px;
+      border-radius: 999px;
+      text-decoration: none;
+      margin-right: 6px;
+    }
+    .small { color: var(--muted); font-size: 12px; }
+    ul { padding-left: 18px; margin: 6px 0; }
+  </style>
+</head>
+<body>
+  <h1>Ruth Meaning Map — Practice Hub</h1>
+  <p class="small">For training only (not production).</p>
+
+  <div class="banner">
+    <strong>Start here:</strong>
+    <a class="primary" href="/app.html">Open the Meaning Map App</a>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Guides</h3>
+      <ul>
+        <li><a class="secondary" href="/Comprehensive_Guide_Ruth.pdf">Comprehensive Guide (PDF)</a></li>
+        <li><a class="secondary" href="/Trainer_Guide.pdf">Trainer Guide (PDF)</a></li>
+        <li><a class="secondary" href="/Analyst_Checklist.pdf">Analyst Checklist (PDF)</a></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Quick Tips</h3>
+      <ul>
+        <li>Use the Register filter to hide irrelevant sections.</li>
+        <li>Click the “?” button for help from the assistant.</li>
+        <li>Auto‑filled values are drafts — confirm before finalizing.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
